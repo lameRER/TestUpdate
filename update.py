@@ -7,7 +7,7 @@ from subprocess import run, STDOUT, PIPE
 # os.system('git fetch')
 # status = os.popen('git status').read()
 output = run('git fetch', stderr=STDOUT, stdout=PIPE, text=True)
-if 'master' in output:
+if 'master' in output.stdout:
     out = run('git pull', stderr=STDOUT, stdout=PIPE, text=True)
     print(out)
     # time.sleep(1)
