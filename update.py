@@ -7,4 +7,4 @@ if 'master' in fetch:
     os.popen('git pull')
     print("yes")
 
-# os.system('py main.py')
+os.system('py main.py')
