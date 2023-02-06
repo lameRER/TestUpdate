@@ -13,4 +13,4 @@ if 'master' in output.stdout:
     # time.sleep(1)
     # print("yes")
 
-# os.system('py main.py')
+os.system('py main.py')
