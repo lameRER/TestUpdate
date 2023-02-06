@@ -3,7 +3,8 @@ import os
 # os.system('git pull')
 # os.popen('git fetch')
 fetch = os.popen('git fetch').read()
-if 'master' in fetch:
+status = os.popen('git status').read()
+if 'git pull' in status:
     os.popen('git pull')
     print("yes")
 
