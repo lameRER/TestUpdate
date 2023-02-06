@@ -1,5 +1,7 @@
 import os
 
-os.system('git pull')
-
-os.system('py main.py')
+# os.system('git pull')
+os.popen('git fetch')
+a = os.popen('git status').read()
+print(a)
+# os.system('py main.py')
