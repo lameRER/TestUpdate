@@ -1,5 +1,4 @@
 import os
-import time
 from subprocess import run, STDOUT, PIPE
 
 # os.system('git pull')
@@ -7,7 +6,7 @@ from subprocess import run, STDOUT, PIPE
 # os.system('git fetch')
 # status = os.popen('git status').read()
 output = run('git fetch', stderr=STDOUT, stdout=PIPE, text=True)
-if 'master' in output.stdout:
+if 'origin\master' in output.stdout:
     out = run('git pull', stderr=STDOUT, stdout=PIPE, text=True)
     print(out.stdout)
     # time.sleep(1)
