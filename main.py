@@ -6,8 +6,4 @@ from tqdm import tqdm
 
 for i in tqdm(range(1000), desc='STEP 1'):
     for j in tqdm(range(1000), leave=False, desc='STEP 2'):
-        for j in tqdm(range(1000), leave=False, desc='STEP 3'):
-            for j in tqdm(range(1000), leave=False, desc='STEP 4'):
-                for j in tqdm(range(1001), leave=False, desc='STEP 5'):
-                    for j in tqdm(range(1001), leave=False, desc='STEP 6'):
-                        time.sleep(0.00001)
+        time.sleep(0.00001)

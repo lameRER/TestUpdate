@@ -9,7 +9,7 @@ from subprocess import run, STDOUT, PIPE
 output = run('git fetch', stderr=STDOUT, stdout=PIPE, text=True)
 if 'master' in output.stdout:
     out = run('git pull', stderr=STDOUT, stdout=PIPE, text=True)
-    print(out)
+    print(out.stdout)
     # time.sleep(1)
     # print("yes")
 
