@@ -4,7 +4,7 @@ import os
 # os.popen('git fetch')
 fetch = os.popen('git fetch').read()
 status = os.popen('git status').read()
-if 'git pull' in status:
+if 'status' in fetch:
     os.popen('git pull')
     print("yes")
 
